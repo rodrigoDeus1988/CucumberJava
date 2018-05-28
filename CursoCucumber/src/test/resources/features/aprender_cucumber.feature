@@ -1,14 +1,6 @@
 #language: pt
 Funcionalidade: Aprender  Cucumber
   
-  #
-  #
-  #
-  #
-  #
-  #
-  #
-  #
   como um aluno
   Eu quero aprender a utilizar  Cucumber
   Para que eu possa automatizar criterios de aceitação
