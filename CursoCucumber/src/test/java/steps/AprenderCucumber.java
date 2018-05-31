@@ -12,6 +12,7 @@ import cucumber.api.java.pt.Quando;
 
 public class AprenderCucumber {
 
+	// **********///
 	@Dado("^que criei o arquivo corretamente$")
 	public void que_criei_o_arquivo_corretamente() throws Throwable {
 

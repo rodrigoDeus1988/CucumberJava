@@ -15,6 +15,7 @@ public class Inserir_contas {
 
 	WebDriver driver;
 
+	//*****//
 	@Dado("^que estou acessando a aplicacao$")
 	public void queEstouAcessandoAAplicacao() throws Throwable {
 
