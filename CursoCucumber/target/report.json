@@ -9,6 +9,17 @@
     "line": 2,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 5619824180,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Inserir_contas.queEstouAcessandoAAplicacao()"
+            }
+          }
+        ],
         "line": 8,
         "name": "Deve inserir uma conta com sucesso",
         "description": "",
@@ -18,9 +29,8 @@
         "steps": [
           {
             "result": {
-              "duration": 366210190,
-              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\Users\\Paz\\Documents\\Automacao\\CursoCucumber\\drivers\\chromedriver.exe\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:33)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:139)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:335)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat steps.Inserir_contas.queEstouAcessandoAAplicacao(Inserir_contas.java:24)\r\n\tat ✽.Dado que estou acessando a aplicacao(src/test/resources/features/InserirConta.feature:9)\r\n",
-              "status": "failed"
+              "duration": 5059524433,
+              "status": "passed"
             },
             "line": 9,
             "name": "que estou acessando a aplicacao",
@@ -31,7 +41,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 13014810,
+              "error_message": "java.lang.NullPointerException\r\n\tat steps.Inserir_contas.informoOUsuario(Inserir_contas.java:31)\r\n\tat ✽.Quando informo o usuario \"rdeus@hotmail.com\"(src/test/resources/features/InserirConta.feature:10)\r\n",
+              "status": "failed"
             },
             "line": 10,
             "name": "informo o usuario \"rdeus@hotmail.com\"",
@@ -150,7 +162,7 @@
       }
     ],
     "name": "Inserir Contas",
-    "description": "\r\nComo um usu�rio \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "description": "\nComo um usu�rio \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
     "id": "inserir-contas",
     "keyword": "Funcionalidade",
     "uri": "src/test/resources/features/InserirConta.feature"
