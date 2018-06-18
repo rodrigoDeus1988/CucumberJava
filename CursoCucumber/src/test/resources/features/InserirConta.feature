@@ -13,8 +13,6 @@ Funcionalidade: Inserir Contas
     Entao visualizo a pagina inicial
     Quando seleciono Contas
     E seleciono Adicionar
-    E informo a conta "Conta Corrente teste3"
+    E informo a conta "Conta Corrente teste10"
     E seleciono Salvar
-    Entao a conta e inserida com sucesso
-    
-  
+    Entao a conta e inserida com sucesso 

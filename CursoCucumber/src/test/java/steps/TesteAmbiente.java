@@ -7,10 +7,10 @@ public class TesteAmbiente {
 	
 	public static void executar (String ambiente){
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Paz\\git\\CursoDeCucumber\\CursoCucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Github\\CursoDeCucumber\\CursoDeCucumber\\CursoCucumber\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://srbarriga.herokuapp.com");
 	}    
 
-}
+} 
  

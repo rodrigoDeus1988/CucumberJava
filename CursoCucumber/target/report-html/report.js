@@ -8,13 +8,9 @@ formatter.feature({
   ],
   "line": 2,
   "name": "Inserir Contas",
-  "description": "\nComo um usu�rio \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+  "description": "\r\nComo um usu�rio \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
   "id": "inserir-contas",
   "keyword": "Funcionalidade"
-});
-formatter.before({
-  "duration": 5619824180,
-  "status": "passed"
 });
 formatter.scenario({
   "line": 8,
@@ -61,7 +57,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "informo a conta \"Conta Corrente teste3\"",
+  "name": "informo a conta \"Conta Corrente teste10\"",
   "keyword": "E "
 });
 formatter.step({
@@ -78,7 +74,7 @@ formatter.match({
   "location": "Inserir_contas.queEstouAcessandoAAplicacao()"
 });
 formatter.result({
-  "duration": 5059524433,
+  "duration": 5401497420,
   "status": "passed"
 });
 formatter.match({
@@ -91,9 +87,8 @@ formatter.match({
   "location": "Inserir_contas.informoOUsuario(String)"
 });
 formatter.result({
-  "duration": 13014810,
-  "error_message": "java.lang.NullPointerException\r\n\tat steps.Inserir_contas.informoOUsuario(Inserir_contas.java:31)\r\n\tat ✽.Quando informo o usuario \"rdeus@hotmail.com\"(src/test/resources/features/InserirConta.feature:10)\r\n",
-  "status": "failed"
+  "duration": 187185969,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -105,54 +100,62 @@ formatter.match({
   "location": "Inserir_contas.aSenha(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 103869701,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.selecionoEntrar()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 683285547,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.visualizoAPaginaInicial()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56730498,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.selecionoContas()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 106298033,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.selecionoAdicionar()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 982121272,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Conta Corrente teste3",
+      "val": "Conta Corrente teste10",
       "offset": 17
     }
   ],
   "location": "Inserir_contas.informoAConta(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 169543607,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.selecionoSalvar()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 508186958,
+  "status": "passed"
 });
 formatter.match({
   "location": "Inserir_contas.aContaEInseridaComSucesso()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 824459477,
+  "status": "passed"
 });
 });

@@ -9,17 +9,6 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 5619824180,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Inserir_contas.queEstouAcessandoAAplicacao()"
-            }
-          }
-        ],
         "line": 8,
         "name": "Deve inserir uma conta com sucesso",
         "description": "",
@@ -29,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5059524433,
+              "duration": 5401497420,
               "status": "passed"
             },
             "line": 9,
@@ -41,9 +30,8 @@
           },
           {
             "result": {
-              "duration": 13014810,
-              "error_message": "java.lang.NullPointerException\r\n\tat steps.Inserir_contas.informoOUsuario(Inserir_contas.java:31)\r\n\tat ✽.Quando informo o usuario \"rdeus@hotmail.com\"(src/test/resources/features/InserirConta.feature:10)\r\n",
-              "status": "failed"
+              "duration": 187185969,
+              "status": "passed"
             },
             "line": 10,
             "name": "informo o usuario \"rdeus@hotmail.com\"",
@@ -60,7 +48,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 103869701,
+              "status": "passed"
             },
             "line": 11,
             "name": "a senha \"2430\"",
@@ -77,7 +66,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 683285547,
+              "status": "passed"
             },
             "line": 12,
             "name": "seleciono entrar",
@@ -88,7 +78,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 56730498,
+              "status": "passed"
             },
             "line": 13,
             "name": "visualizo a pagina inicial",
@@ -99,7 +90,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 106298033,
+              "status": "passed"
             },
             "line": 14,
             "name": "seleciono Contas",
@@ -110,7 +102,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 982121272,
+              "status": "passed"
             },
             "line": 15,
             "name": "seleciono Adicionar",
@@ -121,14 +114,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 169543607,
+              "status": "passed"
             },
             "line": 16,
-            "name": "informo a conta \"Conta Corrente teste3\"",
+            "name": "informo a conta \"Conta Corrente teste10\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Conta Corrente teste3",
+                  "val": "Conta Corrente teste10",
                   "offset": 17
                 }
               ],
@@ -138,7 +132,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 508186958,
+              "status": "passed"
             },
             "line": 17,
             "name": "seleciono Salvar",
@@ -149,7 +144,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 824459477,
+              "status": "passed"
             },
             "line": 18,
             "name": "a conta e inserida com sucesso",
@@ -162,7 +158,7 @@
       }
     ],
     "name": "Inserir Contas",
-    "description": "\nComo um usu�rio \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "description": "\r\nComo um usu�rio \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
     "id": "inserir-contas",
     "keyword": "Funcionalidade",
     "uri": "src/test/resources/features/InserirConta.feature"

@@ -4,8 +4,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.SendKeysAction;
 
-import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -13,15 +14,16 @@ import cucumber.api.java.pt.Quando;
 public class Inserir_contas {
 
 	WebDriver driver;
-	String ambiente;
 
-	// *****//
-	@Before
 	@Dado("^que estou acessando a aplicacao$")
 	public void queEstouAcessandoAAplicacao() throws Throwable {
 
-		TesteAmbiente executar = new TesteAmbiente();
-		executar.executar(null);
+		System.setProperty(
+				"webdriver.chrome.driver",
+				"C:\\Github\\CursoDeCucumber\\CursoDeCucumber\\CursoCucumber\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+
+		driver.get("https://srbarriga.herokuapp.com");   
 
 	}
 
