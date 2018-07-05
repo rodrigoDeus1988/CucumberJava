@@ -18,140 +18,92 @@
         "steps": [
           {
             "result": {
-              "duration": 5401497420,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "que estou acessando a aplicacao",
-            "match": {
-              "location": "Inserir_contas.queEstouAcessandoAAplicacao()"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 187185969,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "informo o usuario \"rdeus@hotmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "rdeus@hotmail.com",
-                  "offset": 19
-                }
-              ],
-              "location": "Inserir_contas.informoOUsuario(String)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 103869701,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
             "name": "a senha \"2430\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2430",
-                  "offset": 9
-                }
-              ],
-              "location": "Inserir_contas.aSenha(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 683285547,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 12,
             "name": "seleciono entrar",
-            "match": {
-              "location": "Inserir_contas.selecionoEntrar()"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 56730498,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
             "name": "visualizo a pagina inicial",
-            "match": {
-              "location": "Inserir_contas.visualizoAPaginaInicial()"
-            },
+            "match": {},
             "keyword": "Entao "
           },
           {
             "result": {
-              "duration": 106298033,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "seleciono Contas",
-            "match": {
-              "location": "Inserir_contas.selecionoContas()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 982121272,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 15,
             "name": "seleciono Adicionar",
-            "match": {
-              "location": "Inserir_contas.selecionoAdicionar()"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 169543607,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 16,
             "name": "informo a conta \"Conta Corrente teste10\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Conta Corrente teste10",
-                  "offset": 17
-                }
-              ],
-              "location": "Inserir_contas.informoAConta(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 508186958,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "seleciono Salvar",
-            "match": {
-              "location": "Inserir_contas.selecionoSalvar()"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 824459477,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 18,
             "name": "a conta e inserida com sucesso",
-            "match": {
-              "location": "Inserir_contas.aContaEInseridaComSucesso()"
-            },
+            "match": {},
             "keyword": "Entao "
           }
         ]

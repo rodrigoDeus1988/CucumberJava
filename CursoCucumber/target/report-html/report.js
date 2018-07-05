@@ -70,92 +70,44 @@ formatter.step({
   "name": "a conta e inserida com sucesso",
   "keyword": "Entao "
 });
-formatter.match({
-  "location": "Inserir_contas.queEstouAcessandoAAplicacao()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 5401497420,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "rdeus@hotmail.com",
-      "offset": 19
-    }
-  ],
-  "location": "Inserir_contas.informoOUsuario(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 187185969,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "2430",
-      "offset": 9
-    }
-  ],
-  "location": "Inserir_contas.aSenha(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 103869701,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.selecionoEntrar()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 683285547,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.visualizoAPaginaInicial()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 56730498,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.selecionoContas()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 106298033,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.selecionoAdicionar()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 982121272,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Conta Corrente teste10",
-      "offset": 17
-    }
-  ],
-  "location": "Inserir_contas.informoAConta(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 169543607,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.selecionoSalvar()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 508186958,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Inserir_contas.aContaEInseridaComSucesso()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 824459477,
-  "status": "passed"
+  "status": "undefined"
 });
 });
