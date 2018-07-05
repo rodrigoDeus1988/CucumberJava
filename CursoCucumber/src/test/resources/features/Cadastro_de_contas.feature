@@ -5,7 +5,7 @@ Funcionalidade: Cadastro de contas
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
-  Cenário: Deve inserir uma conta com sucesso
+  Cenario: Deve inserir uma conta com sucesso
     Dado que estou acessando a aplicação
     Quando informo o usuário "a@a"
     E a senha "a"
