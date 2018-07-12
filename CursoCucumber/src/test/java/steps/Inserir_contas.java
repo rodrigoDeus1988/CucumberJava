@@ -1,5 +1,7 @@
 package steps;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +22,8 @@ public class Inserir_contas {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\rodrigo.florindo\\git\\CursoCucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+		 //driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		driver.get("https://srbarriga.herokuapp.com");
 	}
@@ -47,7 +51,7 @@ public class Inserir_contas {
 	public void visualizoAPaginaInicial() throws Throwable {
 
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
-		Assert.assertEquals("Bem vindo, Rodrigo Deus!", texto);
+		Assert.assertEquals("Bem vindo, teste1!", texto);
 	}
 
 	@When("^seleciono Contas$")
@@ -73,7 +77,8 @@ public class Inserir_contas {
 	public void selecionoSalvar() throws Throwable {
 
 		WebElement botaosalvar = driver.findElement(By.xpath("/html/body/div[2]/form/div[2]/button"));
-		botaosalvar.click();
+		botaosalvar.click();	
+		
 	}
 
 	@Then("^a conta e inserida com sucesso$")
