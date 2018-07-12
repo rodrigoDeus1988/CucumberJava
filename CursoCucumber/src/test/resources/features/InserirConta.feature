@@ -23,7 +23,7 @@ Examples:
 | usuario   		 | senha     | conta                 |
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste06|
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste07|
-| rdeus2@hotmail.com | 2430      | Conta Corrente teste08|
+| rdeus2@hotmail.com | 2430      | Conta Co/rrente teste08|
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste09|
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste10|
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste11|

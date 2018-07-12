@@ -22,8 +22,8 @@ public class Inserir_contas {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\rodrigo.florindo\\git\\CursoCucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		
-		 //driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+
+		// driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		driver.get("https://srbarriga.herokuapp.com");
 	}
@@ -54,6 +54,14 @@ public class Inserir_contas {
 		Assert.assertEquals("Bem vindo, teste1!", texto);
 	}
 
+	@When("^visualizo a pagina inicial mensagem de erro$")
+	public void visualizo_a_pagina_inicial_mensagem_de_erro() throws Throwable {
+
+		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
+		Assert.assertEquals("Problemas com o login do usuário", texto);
+
+	}
+
 	@When("^seleciono Contas$")
 	public void selecionoContas() throws Throwable {
 		WebElement botao = driver.findElement(By.linkText("Contas"));
@@ -77,8 +85,8 @@ public class Inserir_contas {
 	public void selecionoSalvar() throws Throwable {
 
 		WebElement botaosalvar = driver.findElement(By.xpath("/html/body/div[2]/form/div[2]/button"));
-		botaosalvar.click();	
-		
+		botaosalvar.click();
+
 	}
 
 	@Then("^a conta e inserida com sucesso$")
