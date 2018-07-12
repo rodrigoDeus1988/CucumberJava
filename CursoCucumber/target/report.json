@@ -3,108 +3,114 @@
     "comments": [
       {
         "line": 1,
-        "value": "#language: pt"
+        "value": "#language: en"
       }
     ],
     "line": 2,
     "elements": [
       {
-        "line": 8,
+        "line": 9,
         "name": "Deve inserir uma conta com sucesso",
         "description": "",
         "id": "inserir-contas;deve-inserir-uma-conta-com-sucesso",
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 9,
+            "line": 10,
             "name": "que estou acessando a aplicacao",
             "match": {},
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "informo o usuario \"rdeus@hotmail.com\"",
-            "match": {},
-            "keyword": "Quando "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 11,
-            "name": "a senha \"2430\"",
+            "name": "informo o usuario \"rdeus@hotmail.com\"",
             "match": {},
-            "keyword": "E "
+            "keyword": "When "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 12,
-            "name": "seleciono entrar",
+            "name": "a senha \"2430\"",
             "match": {},
-            "keyword": "E "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 13,
-            "name": "visualizo a pagina inicial",
+            "name": "seleciono entrar",
             "match": {},
-            "keyword": "Entao "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 14,
-            "name": "seleciono Contas",
+            "name": "visualizo a pagina inicial",
             "match": {},
-            "keyword": "Quando "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 15,
-            "name": "seleciono Adicionar",
+            "name": "seleciono Contas",
             "match": {},
-            "keyword": "E "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 16,
-            "name": "informo a conta \"Conta Corrente teste10\"",
+            "name": "seleciono Adicionar",
             "match": {},
-            "keyword": "E "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 17,
-            "name": "seleciono Salvar",
+            "name": "informo a conta \"Conta Corrente teste10\"",
             "match": {},
-            "keyword": "E "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 18,
+            "name": "seleciono Salvar",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
             "name": "a conta e inserida com sucesso",
             "match": {},
-            "keyword": "Entao "
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Inclusao_de_contas"
           }
         ]
       }
@@ -112,7 +118,7 @@
     "name": "Inserir Contas",
     "description": "\r\nComo um usu�rio \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
     "id": "inserir-contas",
-    "keyword": "Funcionalidade",
+    "keyword": "Feature",
     "uri": "src/test/resources/features/InserirConta.feature"
   }
 ]
