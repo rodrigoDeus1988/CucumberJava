@@ -14,7 +14,7 @@ Feature: Cadastro de contas
     And clicar no botao Salvar 
     Then os conta e inserida com sucesso
     
- Examples:
+ Examples: 
 
 | usuario   		 | e-mail     			| senha  |
 | Teste_600			 | xxx@teste.com        | teste06|
