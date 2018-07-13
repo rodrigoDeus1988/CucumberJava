@@ -6,7 +6,7 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/Login.feature", glue = {
+@CucumberOptions(features = "src/test/resources/features/Cadastro_de_contas.feature", glue = {
 		"" }, monochrome = true, dryRun = false)
 
 public class Runner {

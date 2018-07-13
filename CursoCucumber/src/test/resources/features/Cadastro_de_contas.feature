@@ -1,41 +1,21 @@
-#language: pt
-Funcionalidade: Cadastro de contas
+#language: en
+Feature: Cadastro de contas
   
   Como um usuário 
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
-  Cenario: Deve inserir uma conta com sucesso
-    Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
-    E seleciono entrar
-    Então visualizo a página inicial
-    Quando seleciono Contas
-    E seleciono Adicionar
-    E informo a conta "Conta de Teste"
-    E seleciono Salvar
-    Então a conta é inserida com sucesso
+  Scenario Outline: Cadastro de contas
+    Given  que estou acessando a menu  
+    And clicar em novo usuario   
+    When informo o usuarioo "<usuario>" 
+    And informo o e-maill "<e-mail>" 
+    And a senha "<senha>"
+    And clicar no botao Salvar 
+    Then os conta e inserida com sucesso
+    
+ Examples:
 
-  Cenário: Não deve inserir uma conta sem nome
-    Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
-    E seleciono entrar
-    Então visualizo a página inicial
-    Quando seleciono Contas
-    E seleciono Adicionar
-    E seleciono Salvar
-    Então sou notificar que o nome da conta é obrigatório
-
-  Cenário: Não deve inserir uma conta com nome já existente
-    Dado que estou acessando a aplicação
-    Quando informo o usuário "a@a"
-    E a senha "a"
-    E seleciono entrar
-    Então visualizo a página inicial
-    Quando seleciono Contas
-    E seleciono Adicionar
-    E informo a conta "Conta de Teste"
-    E seleciono Salvar
-    Então sou notificado que já existe uma conta com esse nome
+| usuario   		 | e-mail     			| senha  |
+| Teste_600			 | xxx@teste.com        | teste06|
+| Teste_680			 | xxx@teste1.com       | teste07|   

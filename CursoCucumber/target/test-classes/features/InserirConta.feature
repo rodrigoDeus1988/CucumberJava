@@ -7,7 +7,7 @@ Feature: Inserir Contas
 
 @Inclusao_de_contas 
 Scenario Outline: Deve inserir uma conta com sucesso 
-	Given  que estou acessando a aplicacao 
+	Given  que estou acessando a aplicacao  
 	When informo o usuario "<usuario>" 
 	And a senha "<senha>" 
 	And seleciono entrar 
