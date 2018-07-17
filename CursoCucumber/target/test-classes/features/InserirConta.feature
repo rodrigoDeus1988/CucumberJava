@@ -20,7 +20,7 @@ Scenario Outline: Deve inserir uma conta com sucesso
 	
 Examples:
 
-| usuario   		 | senha     | conta                 |
+| usuario   		     | senha     | conta                 |
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste06|
 | rdeus2@hotmail.com | 2430      | Conta Corrente teste07|
 | rdeus2@hotmail.com | 2430      | Conta Co/rrente teste08|

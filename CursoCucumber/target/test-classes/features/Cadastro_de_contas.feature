@@ -12,10 +12,10 @@ Feature: Cadastro de contas
     And informo o e-maill "<e-mail>" 
     And a senhaa "<senha>"
     And clicar no botao Salvar 
-    Then os conta e inserida com sucesso
+    Then os conta e inserida com sucesso 
     
  Examples: 
 
-| usuario   		 | e-mail     			| senha  |
+| usuario   		 | e-mail     			    | senha  |
 | Teste_600			 | xxx@teste.com        | teste06|
 | Teste_680			 | xxx@teste1.com       | teste07|   
