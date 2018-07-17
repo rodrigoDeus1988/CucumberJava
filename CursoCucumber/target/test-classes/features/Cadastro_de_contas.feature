@@ -10,7 +10,7 @@ Feature: Cadastro de contas
     And clicar em novo usuario   
     When informo o usuarioo "<usuario>" 
     And informo o e-maill "<e-mail>" 
-    And a senha "<senha>"
+    And a senhaa "<senha>"
     And clicar no botao Salvar 
     Then os conta e inserida com sucesso
     

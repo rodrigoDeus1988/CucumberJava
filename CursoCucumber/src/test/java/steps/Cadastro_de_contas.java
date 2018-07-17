@@ -46,6 +46,12 @@ public class Cadastro_de_contas {
 
 		driver.findElement(By.id("email")).sendKeys(arg1);
 	}
+	
+	@When("^a senhaa \"([^\"]*)\"$")
+	public void a_senhaa(String arg1) throws Throwable {
+	  
+		driver.findElement(By.id("senha")).sendKeys(arg1);
+	}
 
 	@When("^clicar no botao Salvar$")
 	public void clicar_no_botao_Salvar() throws Throwable {
@@ -58,7 +64,7 @@ public class Cadastro_de_contas {
 	public void os_conta_e_inserida_com_sucesso() throws Throwable {
 
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
-		Assert.assertEquals("Conta adicionada com sucesso!", texto);
+		Assert.assertEquals("Usuário inserido com sucesso", texto);
 
 	} 
  
