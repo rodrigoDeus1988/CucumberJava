@@ -25,6 +25,8 @@ public class Cadastro_de_contas {
 		// driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		driver.get("https://srbarriga.herokuapp.com");
+		
+		
 	}
 
 	

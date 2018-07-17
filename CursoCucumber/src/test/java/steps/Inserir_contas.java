@@ -19,13 +19,15 @@ public class Inserir_contas {
 	@Given("^que estou acessando a aplicacao$")
 	public void queEstouAcessandoAAplicacao() throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\rodrigo.florindo\\git\\CursoCucumber\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+		 System.setProperty("webdriver.chrome.driver",
+		 "C:\\Users\\rodrigo.florindo\\git\\CursoCucumber\\drivers\\chromedriver.exe");
+		 driver = new ChromeDriver();
 
-		// driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
-		driver.get("https://srbarriga.herokuapp.com");
+		 driver.get("https://srbarriga.herokuapp.com");
+
+		
 	}
 
 	@When("^informo o usuario \"([^\"]*)\"$")
