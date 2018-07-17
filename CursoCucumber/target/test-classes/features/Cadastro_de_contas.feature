@@ -6,7 +6,7 @@ Feature: Cadastro de contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
   Scenario Outline: Cadastro de contas
-    Given  que estou acessando a menu  
+    Given  que estou acessando a menu
     And clicar em novo usuario   
     When informo o usuarioo "<usuario>" 
     And informo o e-maill "<e-mail>" 

@@ -27,12 +27,18 @@ public class Cadastro_de_contas {
 		driver.get("https://srbarriga.herokuapp.com");
 	}
 
-	@Given("^clicar em novo usuarioo$")
-	public void clicar_em_novo_usuarioo() throws Throwable {
-
+	
+	@Given("^clicar em novo usuario$")
+	public void clicar_em_novo_usuario() throws Throwable {
+	 
 		WebElement menu = driver.findElement(By.linkText("Novo usuário?"));
 		menu.click();
+	}
 
+	@When("^informo o usuarioo \"([^\"]*)\"$")
+	public void informo_o_usuarioo(String arg1) throws Throwable {
+	    
+		driver.findElement(By.id("nome")).sendKeys(arg1);	
 	}
 
 	@When("^informo o e-maill \"([^\"]*)\"$")
@@ -55,5 +61,5 @@ public class Cadastro_de_contas {
 		Assert.assertEquals("Conta adicionada com sucesso!", texto);
 
 	} 
-
+ 
 }
