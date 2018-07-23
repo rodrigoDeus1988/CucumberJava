@@ -1,5 +1,7 @@
 package steps;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +24,7 @@ public class Cadastro_de_contas {
 				"C:\\Users\\rodrigo.florindo\\git\\CursoCucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
-		// driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		driver.get("https://srbarriga.herokuapp.com");
 		

@@ -4,7 +4,8 @@ Feature: Cadastro de contas
   Como um usuário 
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
-
+  
+@CadastrarContas
   Scenario Outline: Cadastro de contas
     Given  que estou acessando a menu
     And clicar em novo usuario   
