@@ -2,15 +2,14 @@ package Runner;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = "@CadastrarContas",features = "src/test/resources/features/Cadastro_de_contas.feature", glue = {
+@CucumberOptions(tags = "@Login_Sucesso",features = "src/test/resources/features/Curso/Login.feature", glue = {
 		"" }, monochrome = true, dryRun = false)
 
  public class Runner { 
 
 	
 }
- 
+  
