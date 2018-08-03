@@ -11,7 +11,7 @@ Scenario: Deve inserir uma conta com sucesso
 	When informo o usuario "rdeus2@hotmail.com" 
 	And a senha "2430" 
 	And seleciono entrar 
-	And visualizo a pagina inicial
+	Then visualizo a pagina inicial
 	
 @Login_acesso_negado
 Scenario: Deve apresentar mensagem de erro de acesso  
@@ -19,4 +19,4 @@ Scenario: Deve apresentar mensagem de erro de acesso
 	When informo o usuario "rdeus2@hotmail.com" 
 	And a senha "24301232" 
 	And seleciono entrar 
-	And visualizo a pagina inicial mensagem de erro   
+	Then visualizo a pagina inicial mensagem de erro   

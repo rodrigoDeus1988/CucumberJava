@@ -8,15 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
- 
-public class Cadastro_de_contas { 
+
+public class Cadastro_de_contas {
 
 	WebDriver driver;
-	
+
 	@Given("^que estou acessando a menu$")
 	public void queEstouAcessandoAAplicacao() throws Throwable {
 
@@ -27,22 +26,20 @@ public class Cadastro_de_contas {
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		driver.get("https://srbarriga.herokuapp.com");
-		
-		
+
 	}
 
-	
 	@Given("^clicar em novo usuario$")
 	public void clicar_em_novo_usuario() throws Throwable {
-	 
+
 		WebElement menu = driver.findElement(By.linkText("Novo usuário?"));
 		menu.click();
 	}
 
 	@When("^informo o usuarioo \"([^\"]*)\"$")
 	public void informo_o_usuarioo(String arg1) throws Throwable {
-	    
-		driver.findElement(By.id("nome")).sendKeys(arg1);	
+
+		driver.findElement(By.id("nome")).sendKeys(arg1);
 	}
 
 	@When("^informo o e-maill \"([^\"]*)\"$")
@@ -50,10 +47,10 @@ public class Cadastro_de_contas {
 
 		driver.findElement(By.id("email")).sendKeys(arg1);
 	}
-	
+
 	@When("^a senhaa \"([^\"]*)\"$")
 	public void a_senhaa(String arg1) throws Throwable {
-	  
+
 		driver.findElement(By.id("senha")).sendKeys(arg1);
 	}
 
@@ -70,6 +67,6 @@ public class Cadastro_de_contas {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals("Usuário inserido com sucesso", texto);
 
-	} 
- 
+	}
+
 }
