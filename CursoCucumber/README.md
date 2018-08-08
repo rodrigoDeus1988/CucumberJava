@@ -1,0 +1,1 @@
+## This fork repository is obsolete. For more details visit [master repository](https://github.com/jenkinsci/cucumber-reports-plugin).
