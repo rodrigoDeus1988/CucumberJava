@@ -5,9 +5,12 @@ Feature: Inserir Contas
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
+Background: User is Logged In 
+
+
 @Inclusao_de_contas 
-Scenario Outline: Deve inserir uma conta com sucesso 
-	Given  que estou acessando a aplicacao  
+Scenario Outline: Deve inserir uma conta com sucesso  
+  Given  que estou acessando a aplicacao  
 	When informo o usuario "<usuario>" 
 	And a senha "<senha>" 
 	And seleciono entrar 
