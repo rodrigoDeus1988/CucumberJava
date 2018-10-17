@@ -19,8 +19,8 @@ public class Inserir_contas {
 	@Given("^que estou acessando a aplicacao$")
 	public void queEstouAcessandoAAplicacao() throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Inmetrics\\git\\CucumberJava\\CursoCucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", 
+				"C:\\Users\\Inmetrics\\git\\CucumberJava\\CursoCucumber\\target\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
