@@ -21,19 +21,16 @@ public class test {
 	private StringBuffer verificationErrors = new StringBuffer();
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws Throwable {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Inmetrics\\git\\CucumberJava\\CursoCucumber\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-
+		Cadastro_de_contas contas = new Cadastro_de_contas();
+		contas.queEstouAcessandoAAplicacao();
+		
 	}
 
 	@Test
 	public void testUntitledTestCase() throws Exception {
-		driver.get("https://srbarriga.herokuapp.com/logout");
+		//driver.get("https://srbarriga.herokuapp.com/logout");
 		driver.findElement(By.id("email")).click();
 		driver.findElement(By.id("email")).clear();
 		driver.findElement(By.id("email")).sendKeys("rdeus2@hotmail.com");

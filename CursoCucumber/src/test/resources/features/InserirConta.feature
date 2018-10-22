@@ -5,16 +5,17 @@ Feature: Inserir Contas
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
-Background: User is Logged In 
+Background:
+	Given  que estou acessando a aplicacao 
+	When informo o usuario "rdeus2@hotmail.com" 
+	And a senha "2430" 
+	And seleciono entrar 
+	Then visualizo a pagina inicial
 
 
 @Inclusao_de_contas 
 Scenario Outline: Deve inserir uma conta com sucesso  
-  Given  que estou acessando a aplicacao  
-	When informo o usuario "<usuario>" 
-	And a senha "<senha>" 
-	And seleciono entrar 
-	And visualizo a pagina inicial 
+
 	And seleciono Contas 
 	And seleciono Adicionar 
 	And informo a conta "<conta>"   
@@ -23,15 +24,15 @@ Scenario Outline: Deve inserir uma conta com sucesso
 	
 Examples:
 
-| usuario   		     | senha     | conta     |
-| rdeus2@hotmail.com | 2430      | Conta 061 |
-| rdeus2@hotmail.com | 2430      | Conta 071 |
-| rdeus2@hotmail.com | 2430      | Conta 081 |
-| rdeus2@hotmail.com | 2430      | Conta 91  |
-| rdeus2@hotmail.com | 2430      | Conta 101 |
-| rdeus2@hotmail.com | 2430      | Conta 111 | 
-| rdeus2@hotmail.com | 2430      | Conta 121 |
-| rdeus2@hotmail.com | 2430      | Conta 131 |
+| usuario   		     | senha     | conta |
+| rdeus2@hotmail.com | 2430      | 061   |
+| rdeus2@hotmail.com | 2430      | 071   |
+| rdeus2@hotmail.com | 2430      | 081   |
+| rdeus2@hotmail.com | 2430      | 091   |
+| rdeus2@hotmail.com | 2430      | 101   |
+| rdeus2@hotmail.com | 2430      | 111   | 
+| rdeus2@hotmail.com | 2430      | 121   |
+| rdeus2@hotmail.com | 2430      | 131   |
 
 
 @Inclusao_de_contas_Cadastradas_Negativo 
