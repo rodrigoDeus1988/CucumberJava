@@ -24,15 +24,15 @@ Scenario Outline: Deve inserir uma conta com sucesso
 	
 Examples:
 
-| usuario   		     | senha     | conta |
-| rdeus2@hotmail.com | 2430      | 061   |
-| rdeus2@hotmail.com | 2430      | 071   |
-| rdeus2@hotmail.com | 2430      | 081   |
-| rdeus2@hotmail.com | 2430      | 091   |
-| rdeus2@hotmail.com | 2430      | 101   |
-| rdeus2@hotmail.com | 2430      | 111   | 
-| rdeus2@hotmail.com | 2430      | 121   |
-| rdeus2@hotmail.com | 2430      | 131   |
+| usuario   		        | senha     | conta            |
+| fhf@hotmail.com       | 2430      | ASJL             |
+| fss@hotmail.com       | 2430      | ladjsd           |
+| dsaad@hotmail.com     | 2430      | açsdmçkasj       |
+| rewrfs@hotmail.com    | 2430      | pqwjew           |
+| gdfdgf@hotmail.com    | 2430      | pakjpskkdjkçsa   |
+| eowuie@hotmail.com    | 2430      | sakjdkjsakd      | 
+| sandlskad@hotmail.com | 2430      | asçkdkas         |
+| eiwiuhdn@hotmail.com  | 2430      | dlkçslkasd       |
 
 
 @Inclusao_de_contas_Cadastradas_Negativo 

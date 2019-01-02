@@ -30,7 +30,7 @@ public class test {
 
 	@Test
 	public void testUntitledTestCase() throws Exception {
-		//driver.get("https://srbarriga.herokuapp.com/logout");
+		driver.get("https://srbarriga.herokuapp.com/logout");
 		driver.findElement(By.id("email")).click();
 		driver.findElement(By.id("email")).clear();
 		driver.findElement(By.id("email")).sendKeys("rdeus2@hotmail.com");

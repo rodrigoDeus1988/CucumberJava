@@ -96,7 +96,8 @@ public class Inserir_contas {
 		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
 		Assert.assertEquals("Conta adicionada com sucesso!", texto);
 
-		driver.quit();
+		//driver.quit();
+		driver.close();
 	}
 
 }
