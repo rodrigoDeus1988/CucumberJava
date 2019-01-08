@@ -11,8 +11,12 @@ Feature: Logar no jenkins
    And a senha do jenkins "<password>" 
    And seleciono Sign in
    Then visualizo a pagina inicial bem vindo ao jenkins
+   And clico no link ruby 
+   And clico no link Construir agora
+   And clico no link Historico de builds   
+   Then clico no link Saida do console     
+   
 
     Examples: 
       | username      | password  |
       | rodrigoDeus   | 243005    |    
-  

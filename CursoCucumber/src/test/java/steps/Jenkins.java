@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,9 +24,9 @@ public class Jenkins {
 				"C:\\Users\\Inmetrics\\git\\CucumberJava\\CursoCucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		driver.get("http://localhost:8080/login"); 
+		driver.get("http://localhost:8080/login");
 
 	}
 
@@ -40,13 +41,13 @@ public class Jenkins {
 
 		driver.findElement(By.name("j_password")).sendKeys(password);
 
-	} 
+	}
 
-	@When("^seleciono Sign in$") 
+	@When("^seleciono Sign in$")
 	public void seleciono_Sign_in() throws Throwable {
 
 		WebElement botao = driver.findElement(By.xpath("/html/body/div/div/form/div[3]/input"));
-		botao.click();  
+		botao.click();
 
 	}
 
@@ -55,6 +56,38 @@ public class Jenkins {
 
 		String texto = driver.findElement(By.linkText("Rodrigo Deus")).getText();
 		Assert.assertEquals("Rodrigo Deus", texto);
+
+	}
+
+	@And("^clico no link ruby$")
+	public void clico_no_link_ruby() throws Throwable {
+
+		WebElement link = driver.findElement(By.linkText("Ruby"));
+		link.click();
+
+	}
+
+	@And("^clico no link Construir agora$")
+	public void clico_no_link_Construir_agora() throws Throwable {
+
+		WebElement link = driver.findElement(By.linkText("Construir agora"));
+		link.click();
+
+	}
+
+	@And("^clico no link Historico de builds$")
+	public void clico_no_link_Historico_de_builds() throws Throwable {
+
+		WebElement link = driver.findElement(By.xpath("//*[@id=\"buildHistory\"]/div[1]/div/div[2]/a"));
+		link.click();
+
+	}
+
+	@Then("^clico no link Saida do console$")
+	public void clico_no_link_Saida_do_console() throws Throwable {
+
+		WebElement link = driver.findElement(By.linkText("Saída do console"));
+		link.click();
 
 	}
 
